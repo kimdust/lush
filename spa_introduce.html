@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUSH | 스파</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="LUSH" />
+    <meta property="og:description" content="프레쉬 핸드메이드 코스메틱 러쉬" />
+    <meta property="og:image" content="./images/urlthumbnail.png" />
+    <meta property="og:url" content="https://kimdust.me/lush/" />
+
+    <link
+      rel="icon"
+      href="./images/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/spa.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.14/index.global.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/comm.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="header">
+        <h1 class="header_title">
+          <a href="index.html">
+            <svg
+              width="130"
+              viewBox="0 0 61 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0.3632V15.636H11.6737V11.7224H4.79164V0.3632H0Z"
+                fill="#fff"
+              />
+              <path
+                d="M27.7273 9.732C27.7273 13.968 25.3973 15.9992 20.6495 15.9992C15.9025 15.9992 13.549 13.968 13.549 9.732V0.3632H18.3406V8.684C18.3406 10.2456 18.3406 12.1912 20.6706 12.1912C22.9357 12.1912 22.9357 10.2448 22.9357 8.684V0.3632H27.7265V9.732H27.7273Z"
+                fill="#fff"
+              />
+              <path
+                d="M34.9936 10.5032C34.9936 10.888 35.0594 11.2296 35.1682 11.508C35.5166 12.428 36.5626 12.62 37.4552 12.62C38.2389 12.62 39.4376 12.364 39.4376 11.2296C39.4376 10.4384 38.7619 10.2248 36.0818 9.476C33.6211 8.7912 30.811 8.1288 30.811 5.048C30.811 1.5184 33.8818 0 37.084 0C40.4585 0 43.4431 1.2624 43.5755 4.984H39.0437C39.1306 4.4064 38.8667 4.0208 38.4777 3.7656C38.087 3.4872 37.5421 3.38 37.0629 3.38C36.4083 3.38 35.3412 3.5504 35.3412 4.4064C35.4281 5.4984 37.6509 5.7328 39.8502 6.332C42.0503 6.9304 44.2293 7.936 44.2293 10.7384C44.2293 14.7168 40.5031 16 37.041 16C35.277 16 30.2466 15.3792 30.2019 10.5032H34.9936Z"
+                fill="#fff"
+              />
+              <path
+                d="M56.2092 0.3632V5.668H51.7205V0.3632H46.9288V15.636H51.7205V9.5824H56.2092V15.636H61V0.3632H56.2092Z"
+                fill="#fff"
+              />
+            </svg>
+          </a>
+        </h1>
+        <div class="header_gnb">
+          <ul>
+            <li>
+              <a href="brand_introduce.html">BRAND</a>
+            </li>
+            <li>
+              <a href="spa_introduce.html" style="font-weight: 800">SPA</a>
+            </li>
+            <li><a href="campaign_donation.html">CAMPAIGN</a></li>
+            <li><a href="shop_best.html">SHOP</a></li>
+          </ul>
+        </div>
+        <div class="header_icon">
+          <ul>
+            <li>
+              <a href="#">
+                <svg
+                  width="25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 135.48 136.53"
+                >
+                  <defs>
+                    <style>
+                      .cls-1,
+                      .cls-2 {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-width: 10px;
+                      }
+                      .cls-1 {
+                        stroke-miterlimit: 10;
+                      }
+                      .cls-2 {
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                      }
+                    </style>
+                  </defs>
+                  <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                      <circle class="cls-1" cx="55.93" cy="55.93" r="52.93" />
+                      <line
+                        class="cls-2"
+                        x1="93.51"
+                        y1="94.57"
+                        x2="132.48"
+                        y2="133.53"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 136.53 136.53"
+                >
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-miterlimit: 10;
+                        stroke-width: 10px;
+                      }
+                    </style>
+                  </defs>
+                  <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                      <circle class="cls-1" cx="68.26" cy="68.26" r="65.26" />
+                      <circle class="cls-1" cx="68.26" cy="55.15" r="21.64" />
+                      <path
+                        class="cls-1"
+                        d="M24.92,117.19c6.18-24.06,23.71-40.4,43.34-40.4s37.17,16.34,43.35,40.4"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 140.56 136.53"
+                >
+                  <defs>
+                    <style>
+                      .cls-1,
+                      .cls-2 {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-width: 10px;
+                      }
+                      .cls-1 {
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                      }
+                      .cls-2 {
+                        stroke-miterlimit: 10;
+                      }
+                    </style>
+                  </defs>
+                  <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                      <polyline
+                        class="cls-1"
+                        points="3 3 19.36 3 44.3 80.67 119.64 80.67 137.56 21.96"
+                      />
+                      <polyline
+                        class="cls-1"
+                        points="44.3 80.67 34.43 105.61 114.44 105.61"
+                      />
+                      <circle class="cls-2" cx="37.49" cy="119.57" r="13.96" />
+                      <circle class="cls-2" cx="114.44" cy="119.57" r="13.96" />
+                      <line
+                        class="cls-1"
+                        x1="60.3"
+                        y1="39.34"
+                        x2="100.48"
+                        y2="39.34"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main id="spa_introduce">
+        <div class="spa_introduce_title">
+          <div class="spa_introduce_txt">
+            <h2>
+              아름다운 자연에서 영감 받은
+              <br />
+              영국 전통 스파
+            </h2>
+            <p>손끝에서 아름다워지는 피부</p>
+          </div>
+        </div>
+        <div class="spa_nav">
+          <ul>
+            <li><a href="spa_introduce.html">소개</a></li>
+            <li><a href="spa_howto.html">이용 방법</a></li>
+          </ul>
+        </div>
+        <div class="spa_introduce_contents">
+          <div class="spa_video">
+            <iframe
+              width="1420"
+              height="800"
+              src="https://www.youtube.com/embed/G9JsHWeO3c0?si=iMltwAKutuztDAoZ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <div class="spa_introduce_txt">
+            <p>
+              감성 스파라 불리는 러쉬 스파는 총 14가지 트리트먼트가 있으며
+              <br />
+              트리트먼트별 각기 다른 음악과 놀라운 퍼포먼스가 함께
+              진행됩니다.<br /><br />
+              자연에서 얻어진 소리와 오케스트라와 같은 멋진 협주곡으로 숲속 또는
+              바다로의 여행을 떠날 수 있으며<br />
+              유럽적인 터치와 환상의 퍼포먼스로 러쉬 스파가 영국 전원의 정취와
+              함께 진정한 의미의 휴식을 선사합니다.
+            </p>
+          </div>
+          <div class="spa_introduce_btn">
+            <ul>
+              <li>
+                <button>
+                  <a href="https://smore.im/quiz/BtL8bMAPzR">
+                    <span>나에게 맞는 스파 트리트먼트 찾기</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </button>
+              </li>
+              <li>
+                <button>
+                  <a href="https://smore.im/quiz/yuyuvgmCC7">
+                    <span>나에게 맞는 스파 트리트먼트 조합 찾기</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper spa_introduce_slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/spa/spa01.png" alt="더 굿 아워" />
+                <div class="spa_slide_txt">
+                  <h4>더 굿 아워</h4>
+                  <span>충분한 이완, 자유로운 몸과 마음, 온전한 휴식</span>
+                  <p>
+                    몸의 긴장을 풀어주는 적당한 압이 함께하는 트리트먼트예요.<br />
+                    70분 간의 딥 티슈 마사지는 지친 근육의 뻐근함과<br />
+                    오랜 근심으로부터 당신을 해방시켜 드립니다.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>네이키드 레벨 3</strong>
+                      <span>속옷만 남겨둔 채 이불 속으로</span>
+                    </li>
+                    <li>
+                      <strong>소요시간</strong>
+                      <span>컨설테이션 15분 + 트리트먼트 70분</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./images/spa/spa02.png"
+                  alt="탱글드 헤어 트리트먼트"
+                />
+                <div class="spa_slide_txt">
+                  <h4>탱글드 헤어 트리트먼트</h4>
+                  <span>가벼워진 몸과 마음 다시 시작할 수 있는 용기</span>
+                  <p>
+                    머리와 윗가슴 부위를 집중적으로 케어해주는 마사지예요.
+                    <br />
+                    신비로운 선율이 귀를 간지럽히고 두피에 힘있는 손길이 닿는
+                    <br />
+                    순간, 눈이 감기며 깊은 의식의 세계로 빠져듭니다.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>네이키드 레벨 1</strong>
+                      <span>탈의가 거의 필요 없는 정도</span>
+                    </li>
+                    <li>
+                      <strong>소요시간</strong>
+                      <span>컨설테이션 15분 + 트리트먼트 25분</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/spa/spa03.png" alt="시네스티지아" />
+                <div class="spa_slide_txt">
+                  <h4>시네스티지아</h4>
+                  <span>
+                    바쁜 일상 속 평화, 무엇이든 할 수 있는 자신감, 느긋한 휴식
+                  </span>
+                  <p>
+                    내가 직접 고르는 단어에 따라 스파 여정이 시작되거든요.
+                    <br />
+                    개개인마다 모두 다른 코스로 이루어지는 맞춤형 트리트먼트죠.
+                    <br />
+                    11가지 마음 상태에 따라 진행되는 80분 간의 릴렉싱을 경험해
+                    보세요.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>네이키드 레벨 3</strong>
+                      <span>속옷만 남겨둔 채 이불 속으로</span>
+                    </li>
+                    <li>
+                      <strong>소요시간</strong>
+                      <span>컨설테이션 15분 + 트리트먼트 80분</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/spa/spa04.png" alt="테일러 메이드" />
+                <div class="spa_slide_txt">
+                  <h4>테일러 메이드</h4>
+                  <span> 가벼운 발걸음, 충분한 이완, 홀가분한 마음 </span>
+                  <p>
+                    평소에 많이 뭉쳐있거나 불편하게 느껴졌던 국소부위를 <br />
+                    풀어준 덕분에 몸이 정말 가벼워졌습니다. <br />
+                    흘러나오는 음악은 작고 평화로운 해안가 마을에 도착한 것 같은
+                    기분이 들어요.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>네이키드 레벨 3</strong>
+                      <span>속옷만 남겨둔 채 이불 속으로</span>
+                    </li>
+                    <li>
+                      <strong>소요시간</strong>
+                      <span>컨설테이션 15분 + 트리트먼트 30분</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/spa/spa05.png" alt="더 스펠" />
+                <div class="spa_slide_txt">
+                  <h4>더 스펠</h4>
+                  <span
+                    >가벼운 발걸음, 상쾌한 기분전환, 바쁜 일상 속 해방감
+                  </span>
+                  <p>
+                    제 2의 심장이라고도 불리는 발을 잘 케어해주는 것은 아주
+                    중요해요. <br />
+                    입욕, 스크럽, 풋 마스크, 그리고 가벼운 두피 마사지까지.
+                    <br />
+                    몸과 마음에 놀라운 평화를 선물해보세요.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>네이키드 레벨 1</strong>
+                      <span>탈의가 거의 필요 없는 정도</span>
+                    </li>
+                    <li>
+                      <strong>소요시간</strong>
+                      <span>컨설테이션 15분 + 트리트먼트 60분</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="spa_introduce_offline">
+            <h3>매장 안내</h3>
+            <ul>
+              <li>
+                <img src="./images/spa/offline01.png" alt="압구정점" />
+                <strong>압구정점</strong>
+
+                <p>서울 강남구 언주로 868 1층</p>
+                <p>0507-1411-5872</p>
+                <p>월요일~일요일 10:00~22:00</p>
+              </li>
+              <li>
+                <img src="./images/spa/offline02.png" alt="경리단길점" />
+                <strong>경리단길점</strong>
+
+                <p>서울 용산구 회나무로42길 10 2층</p>
+                <p>02-790-7561</p>
+                <p>월요일~일요일 10:00~22:00</p>
+              </li>
+              <li>
+                <img src="./images/spa/offline03.png" alt="스타필드 수원점" />
+                <strong>스타필드 수원점</strong>
+
+                <p>경기도 수원시 장안구 수성로 175 스타필드 4층</p>
+                <p>031-690-1455</p>
+                <p>월요일~일요일 10:00~22:00</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="footer_left">
+          <div class="footer_app">
+            <h2>러쉬 앱 설치하기</h2>
+            <div class="footer_app_button">
+              <ul>
+                <li>
+                  <button>
+                    <a
+                      href="https://apps.apple.com/kr/app/%EB%9F%AC%EC%89%AC/id6450295213"
+                    >
+                      <img
+                        src="./images/start/footer_apple.png"
+                        alt="앱스토어"
+                      />
+                      <span>App Store</span>
+                    </a>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=kr.co.lush.lushapp&pli=1"
+                    >
+                      <img
+                        src="./images/start/footer_google.png"
+                        alt="구글스토어"
+                      />
+                      <span>Google Play</span>
+                    </a>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_call">
+            <h2>고객센터</h2>
+            <p>1644-2357</p>
+            <p>상담전화 13:00~16:00 (평일)</p>
+            <p>상담톡 10:00~16:00 (평일)</p>
+            <p>
+              <a
+                href="https://pf.kakao.com/_VEbUM/chat?uuid=%40njm0mjywmsvfqiu"
+                onclick="window.open(this.href, '_blank', 'width=1024, height=800'); return false;"
+              >
+                <img src="./images/start/footer_kakao.png" alt="카카오톡" />
+                상담톡 시작하기
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="footer_right">
+          <div class="footer_txt">
+            <div class="footer_txt_button">
+              <a href="#">개인정보처리방침</a>
+              <a href="#">영상정보관리지침</a>
+              <a href="#">이용약관</a>
+            </div>
+            <p>
+              서울 강남구 학동로 336 (메이트리 빌딩(matree B/D)) 1층 주식회사
+              러쉬코리아
+            </p>
+            <p>사이트 운영자 : 주식회사 러쉬코리아 | 대표이사 : 우미령</p>
+            <p>사업자 등록번호 : 201-81-77964 <a href="#">사업자정보확인</a></p>
+            <p>
+              통신판매업 신고번호 : 2012-서울서초-0647 | 개인정보보호책임자 :
+              장승웅
+            </p>
+            <div class="footer_txt_copyright">
+              COPYRIGHT © LUSHKOREA.CO.LTD.ALL RIGHTS RESERVED.
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

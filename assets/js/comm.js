@@ -31,3 +31,10 @@ var swiper = new Swiper(".main_new_slide", {
     disableOnInteraction: false,
   },
 });
+
+var swiper = new Swiper(".spa_introduce_slide", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

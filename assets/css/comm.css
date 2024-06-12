@@ -263,7 +263,7 @@ legend {
 }
 body {
   overflow-x: hidden;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .wrap {
@@ -487,7 +487,6 @@ body {
   background: #f2f2f2;
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
   color: #555;
 }
 .wrap #footer .footer_left {
