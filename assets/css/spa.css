@@ -430,6 +430,147 @@ body {
   font-weight: 700;
   margin-bottom: 10px;
 }
+.wrap #spa_howto {
+  width: 100vw;
+}
+.wrap #spa_howto .spa_howto_title {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(../../images/spa/top02.png);
+  background-size: 100vw;
+}
+.wrap #spa_howto .spa_howto_title .spa_howto_txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.wrap #spa_howto .spa_howto_title .spa_howto_txt h2 {
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.wrap #spa_howto .spa_nav {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap #spa_howto .spa_nav ul {
+  display: flex;
+  gap: 100px;
+}
+.wrap #spa_howto .spa_nav ul li a {
+  color: #555;
+}
+.wrap #spa_howto .spa_nav ul li:last-child a {
+  font-weight: 700;
+  color: #8443ce;
+}
+.wrap #spa_howto .spa_howto_contents {
+  text-align: center;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_step {
+  margin-top: 100px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_step h3 {
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_step .step1,
+.wrap #spa_howto .spa_howto_contents .spa_howto_step .step2,
+.wrap #spa_howto .spa_howto_contents .spa_howto_step .step3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_step .step1 h4,
+.wrap #spa_howto .spa_howto_contents .spa_howto_step .step2 h4,
+.wrap #spa_howto .spa_howto_contents .spa_howto_step .step3 h4 {
+  color: #8443ce;
+  font-weight: 700;
+  margin-right: 40px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_step .step1 p,
+.wrap #spa_howto .spa_howto_contents .spa_howto_step .step2 p,
+.wrap #spa_howto .spa_howto_contents .spa_howto_step .step3 p {
+  text-align: left;
+  width: 580px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_step .step1 p strong,
+.wrap #spa_howto .spa_howto_contents .spa_howto_step .step2 p strong,
+.wrap #spa_howto .spa_howto_contents .spa_howto_step .step3 p strong {
+  font-weight: 700;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_buy {
+  padding: 0 250px;
+  margin-top: 150px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_buy h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_buy ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_buy ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 20px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_buy ul li img {
+  width: 260px;
+  margin-bottom: 20px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_buy ul li span {
+  font-size: 16px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_reserve {
+  padding: 0 250px;
+  margin-top: 150px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_reserve h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_reserve ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_reserve ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 20px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_reserve ul li img {
+  width: 260px;
+  margin-bottom: 20px;
+}
+.wrap #spa_howto .spa_howto_contents .spa_howto_reserve ul li span {
+  font-size: 16px;
+}
 .wrap #footer {
   width: 100%;
   height: 400px;
