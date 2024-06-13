@@ -251,6 +251,132 @@ body {
     }
   }
 
+  #shop_perfume {
+    position: relative;
+    .shop_nav {
+      ul {
+        li {
+          &:nth-child(6) {
+            border-bottom: 2px solid #8443ce;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .shop_perfume_2depth {
+      position: absolute;
+      ul {
+        display: flex;
+        gap: 30px;
+        border: 1px solid #e6e6e6;
+        background: #fff;
+        padding: 20px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 100%;
+          left: 340px;
+          border-width: 10px;
+          border-style: solid;
+          border-color: transparent transparent #e6e6e6 transparent;
+        }
+        li {
+          button {
+            font-family: "Pretendard";
+          }
+        }
+        #perfume_all {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  #shop_bath {
+    position: relative;
+    .shop_nav {
+      ul {
+        li {
+          &:nth-child(7) {
+            border-bottom: 2px solid #8443ce;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .shop_bath_2depth {
+      position: absolute;
+      ul {
+        display: flex;
+        gap: 30px;
+        border: 1px solid #e6e6e6;
+        background: #fff;
+        padding: 20px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 100%;
+          left: 220px;
+          border-width: 10px;
+          border-style: solid;
+          border-color: transparent transparent #e6e6e6 transparent;
+        }
+        li {
+          button {
+            font-family: "Pretendard";
+          }
+        }
+        #bath_all {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  #shop_gift {
+    position: relative;
+    .shop_nav {
+      ul {
+        li {
+          &:nth-child(8) {
+            border-bottom: 2px solid #8443ce;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .shop_gift_2depth {
+      position: absolute;
+      ul {
+        display: flex;
+        gap: 30px;
+        border: 1px solid #e6e6e6;
+        background: #fff;
+        padding: 20px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 100%;
+          left: 260px;
+          border-width: 10px;
+          border-style: solid;
+          border-color: transparent transparent #e6e6e6 transparent;
+        }
+        li {
+          button {
+            font-family: "Pretendard";
+          }
+        }
+        #gift_all {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
   #footer {
     width: 100%;
     height: 400px;

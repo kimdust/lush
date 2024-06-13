@@ -106,9 +106,70 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", positionHair2depth);
 });
 
-$(document).ready(function () {
-  $(".shop_hair_2depth, .shop_body_2depth").hide();
+// 퍼퓸 2depth 모달 위치조정
+document.addEventListener("DOMContentLoaded", function () {
+  const shopNav = document.querySelector(".shop_nav ul");
+  const fifthLi = shopNav.children[5];
+  const shopPerfume2depth = document.querySelector(".shop_perfume_2depth");
 
+  function positionPerfume2depth() {
+    const liRect = fifthLi.getBoundingClientRect();
+    const navRect = shopNav.getBoundingClientRect();
+
+    const liCenterX = liRect.left + liRect.width / 2;
+    const navLeft = navRect.left;
+    shopPerfume2depth.style.left = `${liCenterX - navLeft - 100}px`;
+    shopPerfume2depth.style.top = `${liRect.bottom + window.scrollY + 15}px`;
+  }
+
+  positionPerfume2depth();
+
+  window.addEventListener("resize", positionHair2depth);
+});
+
+// 입욕제 2depth 모달 위치조정
+document.addEventListener("DOMContentLoaded", function () {
+  const shopNav = document.querySelector(".shop_nav ul");
+  const sixthLi = shopNav.children[5];
+  const shopBath2depth = document.querySelector(".shop_bath_2depth");
+
+  function positionBath2depth() {
+    const liRect = sixthLi.getBoundingClientRect();
+    const navRect = shopNav.getBoundingClientRect();
+
+    const liCenterX = liRect.left + liRect.width / 2;
+    const navLeft = navRect.left;
+    shopBath2depth.style.left = `${liCenterX - navLeft + 199}px`;
+    shopBath2depth.style.top = `${liRect.bottom + window.scrollY + 15}px`;
+  }
+
+  positionBath2depth();
+
+  window.addEventListener("resize", positionHair2depth);
+});
+
+// 기프트 2depth 모달 위치조정
+document.addEventListener("DOMContentLoaded", function () {
+  const shopNav = document.querySelector(".shop_nav ul");
+  const sevnthLi = shopNav.children[6];
+  const shopGift2depth = document.querySelector(".shop_gift_2depth");
+
+  function positionGift2depth() {
+    const liRect = sevnthLi.getBoundingClientRect();
+    const navRect = shopNav.getBoundingClientRect();
+
+    const liCenterX = liRect.left + liRect.width / 2;
+    const navLeft = navRect.left;
+    shopGift2depth.style.left = `${liCenterX - navLeft + 157}px`;
+    shopGift2depth.style.top = `${liRect.bottom + window.scrollY + 15}px`;
+  }
+
+  positionGift2depth();
+
+  window.addEventListener("resize", positionHair2depth);
+});
+
+$(document).ready(function () {
   $("#hair_nav, .shop_hair_2depth").mouseenter(function () {
     $(".shop_hair_2depth").show();
   });
@@ -128,6 +189,27 @@ $(document).ready(function () {
   });
   $("#face_nav, .shop_face_2depth").mouseleave(function () {
     $(".shop_face_2depth").hide();
+  });
+
+  $("#perfume_nav, .shop_perfume_2depth").mouseenter(function () {
+    $(".shop_perfume_2depth").show();
+  });
+  $("#perfume_nav, .shop_perfume_2depth").mouseleave(function () {
+    $(".shop_perfume_2depth").hide();
+  });
+
+  $("#bath_nav, .shop_bath_2depth").mouseenter(function () {
+    $(".shop_bath_2depth").show();
+  });
+  $("#bath_nav, .shop_bath_2depth").mouseleave(function () {
+    $(".shop_bath_2depth").hide();
+  });
+
+  $("#gift_nav, .shop_gift_2depth").mouseenter(function () {
+    $(".shop_gift_2depth").show();
+  });
+  $("#gift_nav, .shop_gift_2depth").mouseleave(function () {
+    $(".shop_gift_2depth").hide();
   });
 
   // 헤어 카테고리 분류
@@ -244,5 +326,113 @@ $(document).ready(function () {
 
   $("#face_eyepad").click(function () {
     showCategory("eyepad");
+  });
+
+  // 퍼퓸 카테고리 분류
+  function showCategory(category) {
+    $(".perfume_all").hide();
+    if (category === "all") {
+      $(".perfume_all").show();
+    } else {
+      $("li#" + category).show();
+    }
+    $("button").css("font-weight", "normal");
+    $("#perfume_" + category).css("font-weight", "700");
+  }
+
+  $("#perfume_all").click(function () {
+    showCategory("all");
+  });
+
+  $("#perfume_bodyspray").click(function () {
+    showCategory("bodyspray");
+  });
+
+  $("#perfume_library").click(function () {
+    showCategory("library");
+  });
+
+  $("#perfume_corerange").click(function () {
+    showCategory("corerange");
+  });
+
+  $("#perfume_solid").click(function () {
+    showCategory("solid");
+  });
+
+  $("#perfume_washcard").click(function () {
+    showCategory("washcard");
+  });
+
+  // 입욕제 카테고리 분류
+  function showCategory(category) {
+    $(".bath_all").hide();
+    if (category === "all") {
+      $(".bath_all").show();
+    } else {
+      $("li#" + category).show();
+    }
+    $("button").css("font-weight", "normal");
+    $("#bath_" + category).css("font-weight", "700");
+  }
+
+  $("#bath_all").click(function () {
+    showCategory("all");
+  });
+
+  $("#bath_bathbomb").click(function () {
+    showCategory("bathbomb");
+  });
+
+  $("#bath_bubblebar").click(function () {
+    showCategory("bubblebar");
+  });
+
+  $("#bath_bathoil").click(function () {
+    showCategory("bathoil");
+  });
+
+  $("#bath_fun").click(function () {
+    showCategory("fun");
+  });
+
+  $("#bath_bathmelt").click(function () {
+    showCategory("bathmelt");
+  });
+
+  // 기프트 카테고리 분류
+  function showCategory(category) {
+    $(".gift_all").hide();
+    if (category === "all") {
+      $(".gift_all").show();
+    } else {
+      $("li#" + category).show();
+    }
+    $("button").css("font-weight", "normal");
+    $("#gift_" + category).css("font-weight", "700");
+  }
+
+  $("#gift_all").click(function () {
+    showCategory("all");
+  });
+
+  $("#gift_littlegift").click(function () {
+    showCategory("littlegift");
+  });
+
+  $("#gift_mediumgift").click(function () {
+    showCategory("mediumgift");
+  });
+
+  $("#gift_biggift").click(function () {
+    showCategory("biggift");
+  });
+
+  $("#gift_notrap").click(function () {
+    showCategory("notrap");
+  });
+
+  $("#gift_accessory").click(function () {
+    showCategory("accessory");
   });
 });
