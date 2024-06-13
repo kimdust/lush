@@ -393,6 +393,72 @@ body {
 .wrap #shop_hair .shop_hair_2depth ul #hair_all {
   font-weight: 700;
 }
+.wrap #shop_body {
+  position: relative;
+}
+.wrap #shop_body .shop_nav ul li:nth-child(4) {
+  border-bottom: 2px solid #8443ce;
+  font-weight: 700;
+}
+.wrap #shop_body .shop_body_2depth {
+  position: absolute;
+}
+.wrap #shop_body .shop_body_2depth ul {
+  display: flex;
+  gap: 30px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  padding: 20px;
+  position: relative;
+}
+.wrap #shop_body .shop_body_2depth ul::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 240px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #e6e6e6 transparent;
+}
+.wrap #shop_body .shop_body_2depth ul li button {
+  font-family: "Pretendard";
+}
+.wrap #shop_body .shop_body_2depth ul #body_all {
+  font-weight: 700;
+}
+.wrap #shop_face {
+  position: relative;
+}
+.wrap #shop_face .shop_nav ul li:nth-child(5) {
+  border-bottom: 2px solid #8443ce;
+  font-weight: 700;
+}
+.wrap #shop_face .shop_face_2depth {
+  position: absolute;
+}
+.wrap #shop_face .shop_face_2depth ul {
+  display: flex;
+  gap: 30px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  padding: 20px;
+  position: relative;
+}
+.wrap #shop_face .shop_face_2depth ul::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 340px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #e6e6e6 transparent;
+}
+.wrap #shop_face .shop_face_2depth ul li button {
+  font-family: "Pretendard";
+}
+.wrap #shop_face .shop_face_2depth ul #face_all {
+  font-weight: 700;
+}
 .wrap #footer {
   width: 100%;
   height: 400px;

@@ -167,6 +167,90 @@ body {
     }
   }
 
+  #shop_body {
+    position: relative;
+    .shop_nav {
+      ul {
+        li {
+          &:nth-child(4) {
+            border-bottom: 2px solid #8443ce;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .shop_body_2depth {
+      position: absolute;
+      ul {
+        display: flex;
+        gap: 30px;
+        border: 1px solid #e6e6e6;
+        background: #fff;
+        padding: 20px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 100%;
+          left: 240px;
+          border-width: 10px;
+          border-style: solid;
+          border-color: transparent transparent #e6e6e6 transparent;
+        }
+        li {
+          button {
+            font-family: "Pretendard";
+          }
+        }
+        #body_all {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  #shop_face {
+    position: relative;
+    .shop_nav {
+      ul {
+        li {
+          &:nth-child(5) {
+            border-bottom: 2px solid #8443ce;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .shop_face_2depth {
+      position: absolute;
+      ul {
+        display: flex;
+        gap: 30px;
+        border: 1px solid #e6e6e6;
+        background: #fff;
+        padding: 20px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 100%;
+          left: 340px;
+          border-width: 10px;
+          border-style: solid;
+          border-color: transparent transparent #e6e6e6 transparent;
+        }
+        li {
+          button {
+            font-family: "Pretendard";
+          }
+        }
+        #face_all {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
   #footer {
     width: 100%;
     height: 400px;
