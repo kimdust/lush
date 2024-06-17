@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   positionBody2depth();
 
-  window.addEventListener("resize", positionHair2depth);
+  window.addEventListener("resize", positionBody2depth);
 });
 
 // 페이스 2depth 모달 위치조정
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   positionFace2depth();
 
-  window.addEventListener("resize", positionHair2depth);
+  window.addEventListener("resize", positionFace2depth);
 });
 
 // 퍼퓸 2depth 모달 위치조정
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   positionPerfume2depth();
 
-  window.addEventListener("resize", positionHair2depth);
+  window.addEventListener("resize", positionPerfume2depth);
 });
 
 // 입욕제 2depth 모달 위치조정
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   positionBath2depth();
 
-  window.addEventListener("resize", positionHair2depth);
+  window.addEventListener("resize", positionBath2depth);
 });
 
 // 기프트 2depth 모달 위치조정
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   positionGift2depth();
 
-  window.addEventListener("resize", positionHair2depth);
+  window.addEventListener("resize", positionGift2depth);
 });
 
 $(document).ready(function () {
@@ -211,14 +211,16 @@ $(document).ready(function () {
   $("#gift_nav, .shop_gift_2depth").mouseleave(function () {
     $(".shop_gift_2depth").hide();
   });
+});
 
-  // 헤어 카테고리 분류
+// 헤어 카테고리 분류
+$(document).ready(function () {
   function showCategory(category) {
     $(".hair_all").hide();
     if (category === "all") {
       $(".hair_all").show();
     } else {
-      $("li#" + category).show();
+      $(".hair_all#" + category).show();
     }
     $("button").css("font-weight", "normal");
     $("#hair_" + category).css("font-weight", "700");
@@ -247,14 +249,16 @@ $(document).ready(function () {
   $("#hair_styling").click(function () {
     showCategory("styling");
   });
+});
 
-  // 바디 카테고리 분류
+// 바디 카테고리 분류
+$(document).ready(function () {
   function showCategory(category) {
     $(".body_all").hide();
     if (category === "all") {
       $(".body_all").show();
     } else {
-      $("li#" + category).show();
+      $(".body_all#" + category).show();
     }
     $("button").css("font-weight", "normal");
     $("#body_" + category).css("font-weight", "700");
@@ -283,8 +287,10 @@ $(document).ready(function () {
   $("#body_dustingpowder").click(function () {
     showCategory("dustingpowder");
   });
+});
 
-  // 페이스 카테고리 분류
+// 페이스 카테고리 분류
+$(document).ready(function () {
   function showCategory(category) {
     $(".face_all").hide();
     if (category === "all") {
@@ -327,8 +333,10 @@ $(document).ready(function () {
   $("#face_eyepad").click(function () {
     showCategory("eyepad");
   });
+});
 
-  // 퍼퓸 카테고리 분류
+// 퍼퓸 카테고리 분류
+$(document).ready(function () {
   function showCategory(category) {
     $(".perfume_all").hide();
     if (category === "all") {
@@ -363,8 +371,10 @@ $(document).ready(function () {
   $("#perfume_washcard").click(function () {
     showCategory("washcard");
   });
+});
 
-  // 입욕제 카테고리 분류
+// 입욕제 카테고리 분류
+$(document).ready(function () {
   function showCategory(category) {
     $(".bath_all").hide();
     if (category === "all") {
@@ -399,8 +409,10 @@ $(document).ready(function () {
   $("#bath_bathmelt").click(function () {
     showCategory("bathmelt");
   });
+});
 
-  // 기프트 카테고리 분류
+// 기프트 카테고리 분류
+$(document).ready(function () {
   function showCategory(category) {
     $(".gift_all").hide();
     if (category === "all") {
